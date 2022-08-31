@@ -1,0 +1,699 @@
+/*
+    Fonts:
+        ORBITRON
+            font-family: orbitron,sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        PT Mono Regular
+            font-family: pt-mono,monospace;
+            font-weight: 400;
+            font-style: normal;
+        PT Mono Bold
+            font-family: pt-mono,monospace;
+            font-weight: 700;
+            font-style: normal;
+        Whomp
+            font-family: whomp,sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+    Colors:
+        Light Blue
+            #6CF1FF
+        Dark Blue
+            #52D7E5
+        Pink
+            #F96CD0
+        Purple
+            #AC66F2
+        Yellow
+            #FCF787
+        Green
+            #07F285
+*/
+
+* {
+    font-family: orbitron,sans-serif;
+    color: #fff;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fonts */
+.orbitron{
+    font-family: orbitron,sans-serif;
+}
+.whomp {
+    font-family: whomp,sans-serif;
+}
+.ptmono {
+    font-family: pt-mono,monospace;
+}
+
+/*Font Sizes*/
+.hero-text {
+    font-size: 172px;
+    text-align: center;
+}
+.header-text{
+    font-size: 72px;
+    text-align: center;
+}
+.subheader-text {
+    font-size: 30px;
+    text-align: left;
+}
+.p-text {
+    font-size: 22px;
+    text-align: left;
+}
+.wrap-word{
+    word-wrap: normal;
+}
+
+
+/*Text Colors*/
+.yellow-blue-xl {
+    color: #FCF787;
+    text-shadow: 4px 8px 0 #6CF1FF, -4px -4px 0 #F96CD0;
+}
+.green-yellow-lg {
+    color: #07F285;
+    text-shadow: 2px 4px 0 #FCF787, -2px -4px 0 #F96CD0;
+}
+.blue-pink-lg {
+    color: #6CF1FF;
+    text-shadow: 2px 4px 0 #F96CD0, -2px -4px 0 #FCF787;
+}
+.darkblue-yellow-lg {
+    color: #52D7E5;
+    text-shadow: 2px 4px 0 #FCF787, -2px -4px 0 #F96CD0;
+}
+.pink-blue-lg {
+    color: #F96CD0;
+    text-shadow: 2px 4px 0 #6CF1FF, -2px -4px 0 #FCF787;
+}
+.yellow-green-lg {
+    color: #FCF787;
+    text-shadow: 2px 4px 0 #07F285, -2px -4px 0 #AC66F2;
+}
+.darkblue-yellow-md {
+    color: #52D7E5;
+    text-shadow: 1px 2px 0 #FCF787, -1px -1px 0 #F96CD0;
+}
+.pink-blue-md {
+    color: #F96CD0;
+    text-shadow: 1px 2px 0 #6CF1FF, -1px -1px 0 #FCF787;
+}
+.blue-pink-md {
+    color: #6CF1FF;
+    text-shadow: 1px 2px 0 #F96CD0, -1px -1px 0 #FCF787;
+}
+.blue-yellow-md {
+    color: #6CF1FF;
+    text-shadow: 1px 2px 0 #FCF787, -1px -1px 0 #F96CD0;
+}
+.green-yellow-md {
+    color: #07F285;
+    text-shadow: 1px 2px 0 #FCF787, -1px -1px 0 #F96CD0;
+}
+.yellow-green-md {
+    color: #FCF787;
+    text-shadow: 1px 2px 0 #07F285, -1px -1px 0 #AC66F2;
+}
+.yellow-blue-md {
+    color: #FCF787;
+    text-shadow: 1px 2px 0 #6cf1ff, -1px -1px 0 #F96CD0;
+}
+.green-yellow-sm {
+    color: #07F285;
+    text-shadow: 1px 1px 0 #FCF787;
+}
+.blue-pink-sm {
+    color: #6CF1FF;
+    text-shadow: 1px 1px 0 #F96CD0;
+}
+.yellow-green-sm {
+    color: #FCF787;
+    text-shadow: 1px 1px 0 #07F285;
+}
+.pink-blue-sm {
+    color: #F96CD0;
+    text-shadow: 1px 1px 0 #6CF1FF;
+}
+.darkblue-yellow-sm {
+    color: #52D7E5;
+    text-shadow: 1px 1px 0 #FCF787;
+}
+
+/*UI*/
+.button {
+    text-decoration: none;
+    cursor: pointer;
+}
+.button:hover{
+    text-decoration: underline;
+}
+.double-btn{
+    display: flex;
+    flex-direction: row;
+}
+.double-btn .button:first-child{
+    margin-right: 120px;
+}
+
+/*Wrappers*/
+.main-wrap{
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-wrap{
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.even-wrap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+.even-wrap>div{
+    display: flex;
+    width: 50%;
+}
+
+.first-qtr-wrap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+.first-qtr-wrap>.first-qtr{
+    display: flex;
+    width: 25%;
+}
+.first-qtr-wrap>.second-qtr{
+    display: flex;
+    width: 75%;
+}
+
+.wide-wrap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.vert-wrap{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.one-col{
+    display: flex;
+    width: 25%;
+}
+
+/*Formatting*/
+.subtext{
+    margin-left: 14px;
+}
+.subtext-reverse{
+    margin-right: 14px;
+}
+.center-text{
+    text-align: center;
+}
+.right-text{
+    text-align: right;
+}
+.left-text{
+    text-align: left;
+}
+.flex-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.info-pair{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.info-pair>div:first-child{
+    width: 50%;
+}
+.info-pair>div:last-child{
+    width: 50%;
+}
+
+.center-split{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.center-split>div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding-right: 28px;
+}
+.center-split>div:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/*Nav*/
+.nav-wrap{
+    width: 100vw;
+    height: 15.7vw;
+    background-image: url('https://www.zackerysmith.com/assets/imgs/nav_bg.png');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.logo{
+    display: flex;
+    height: 7.8vw;
+    width: 7.8vw;
+    background-image: url('https://www.zackerysmith.com/assets/imgs/vaporwave-logo.png');
+    background-position: center;
+    background-size: contain;
+    color: rgba(0, 0, 0, 0);
+    font-size: 0px;
+    background-repeat: no-repeat;
+}
+.raise{
+    margin-top: -3vw;
+}
+.nav-space{
+    display: flex;
+    height: 14vw;
+    width: 14vw;
+}
+
+/*Hero*/
+.page-bg{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/bg-splat-dark1.png');
+    /*./js/run-bg.js sets: background-image: url('https://www.zackerysmith.com/assets/gifs/bg-splat_low_size.gif');*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+}
+
+/*Single Use*/
+.flower-1{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/flower1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 260px;
+    height: 260px;
+}
+.flower-2{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/flower2.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 260px;
+    height: 260px;
+}
+.flower-3{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/flower3.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 260px;
+    height: 260px;
+}
+#tree-img{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/neon_tree.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 998px;
+}
+#pivotal-blue{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/pivotal_outline_blue.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-top: 25%;
+}
+#copy-ai{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/copy-ai.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-top: 25%;
+}
+#zenlist{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/zenlist.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-top: 25%;
+}
+#gd-blue{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/gd_outline.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-top: 25%;
+}
+#pivotal-green{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/pivotal_outline.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-top: 25%;
+}
+#tyrn-green{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/tyrn_outline.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-top: 25%;
+}
+#qp-green{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/QP_outline.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-top: 25%;
+}
+#headshot{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/neon_headshot.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-top: 50%;
+}
+.flower-4{
+    background-image: url('https://www.zackerysmith.com/assets/imgs/flower4.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 260px;
+    height: 260px;
+}
+
+/*Spacing*/
+.xl-space{
+    margin-bottom: 168px;
+}
+.lg-space{
+    margin-bottom: 56px;
+}
+.md-space{
+    margin-bottom: 28px;
+}
+.sm-space{
+    margin-bottom: 12px;
+}
+
+/*Tablet Sizing*/
+@media only screen and (max-width : 1424px) {
+    /*Font-size*/
+    .hero-text{
+        font-size: 108px;
+    }
+    .header-text{
+        font-size: 48px;
+    }
+    .subheader-text{
+        font-size: 26px;
+    }
+    .p-text{
+        font-size: 18px;
+    }
+
+    /*Wrappers*/
+    .body-wrap{
+        width: 95vw;
+    }
+    .center-split{
+        width: 80%;
+    }
+
+    /*Single-use*/
+    #tree-img{
+        background-image: url('https://www.zackerysmith.com/assets/imgs/neon_tree.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        height: unset;
+        padding-top: 70%;
+    }
+
+    /*Spacing*/
+    .xl-space{
+        margin-bottom: 132px;
+    }
+}
+
+/*Mobile Sizing*/
+@media only screen and (max-width: 800px) {
+    /*Font-size*/
+    .hero-text{
+        font-size: 48px;
+    }
+    .header-text{
+        font-size: 34px;
+    }
+    .subheader-text{
+        font-size: 22px;
+    }
+    .p-text{
+        font-size: 14px;
+    }
+
+    /*Spacing*/
+    .xl-space{
+        margin-bottom: 74px;
+    }
+    .lg-space{
+        margin-bottom: 56px;
+    }
+    .md-space{
+        margin-bottom: 28px;
+    }
+    .nav-space{
+        height: 40vh;
+    }
+    .space-mobile{
+        height: 20vh;
+    }
+
+    /*Text-Align*/
+    .header-text{
+        width: 90%;
+    }
+    .center-mobile{
+        text-align: center;
+    }
+    .button{
+        text-align: left;
+    }
+
+    /*Wrappers*/
+    .body-wrap .wide-wrap{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .even-wrap{
+        flex-direction: column-reverse;
+    }
+    .even-wrap>div:last-child{
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+    .first-qtr-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-qtr-wrap>div:first-child{
+        align-self: start;
+        margin-left: 5%;
+    }
+    .first-qtr-wrap>div:last-child{
+        display: flex;
+        width: 90%;
+    }
+    .double-btn{
+        flex-direction: column;
+    }
+    .double-btn .button:first-child{
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .info-pair{
+        flex-wrap: wrap;
+    }
+    .info-pair>div:first-child{
+        width: 60%;
+    }
+    .info-pair>div:last-child{
+        width: 40%;
+    }
+    .info-pair>div{
+        min-width: 170px;
+    }
+    .info-pair > div:first-child > p{
+        margin-bottom: 12px;
+    }
+    .second-qtr .button{
+        align-self: flex-end;
+    }
+    .second-qtr .double-btn{
+        align-self: flex-end;
+    }
+
+    .center-split{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .center-split > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center;
+        width: 100%;
+        padding-right: 0;
+    }
+    .center-split *{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .center-split>div>a {
+        margin-bottom: 12px;
+    }
+
+    /*Single-use*/
+    .flower-1{
+        width: 130px;
+        height: 130px;
+    }
+    .flower-2{
+        width: 130px;
+        height: 130px;
+    }
+    .flower-3{
+        width: 130px;
+        height: 130px;
+    }
+    .flower-4{
+        width: 130px;
+        height: 130px;
+    }
+
+    /*Nav*/
+    .nav-wrap{
+        width: 100vw;
+        height: 32vw;
+        background-size: 200vw 32vw;
+        align-items: flex-start;
+    }
+    .nav-wrap .orbitron{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        height: 15vw;
+        width: 15vw;
+        background-image: url('https://www.zackerysmith.com/assets/imgs/vaporwave-logo.png');
+        background-position: center;
+        background-size: contain;
+        color: rgba(0, 0, 0, 0);
+        font-size: 0px;
+        background-repeat: no-repeat;
+    }
+    .raise{
+        margin-top: 28px;
+    }
+
+    /*Text-shadows*/
+    .yellow-blue-xl {
+        text-shadow: 2px 4px 0 #6CF1FF, -2px -2px 0 #F96CD0;
+    }
+    .green-yellow-lg {
+        text-shadow: 1px 2px 0 #FCF787, -1px -2px 0 #F96CD0;
+    }
+    .blue-pink-lg {
+        text-shadow: 1px 2px 0 #F96CD0, -1px -2px 0 #FCF787;
+    }
+    .darkblue-yellow-lg {
+        text-shadow: 1px 2px 0 #FCF787, -1px -2px 0 #F96CD0;
+    }
+    .pink-blue-lg {
+        text-shadow: 1px 2px 0 #6CF1FF, -1px -2px 0 #FCF787;
+    }
+    .yellow-green-lg {
+        text-shadow: 1px 2px 0 #07F285, -1px -2px 0 #AC66F2;
+    }
+}
+
+@media only screen and (max-width: 497px)  {
+    .mobile-full-center *{
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-pair{
+        width: 100%;
+    }
+    .info-pair > .flex-left{
+        width: 100% !important
+    }
+}
