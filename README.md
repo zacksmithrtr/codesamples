@@ -3,7 +3,7 @@ None of these samples are particularly complex or challenging, but I believe the
 
 Database
 
-I'll use my User and Auth schemas from Pivotal Retention as database examples. Many "Users" were drivers that didn't need an actual account login or permissions. They received an email with a unique URL for responding to feedback requests, but never logged in or had multi-page sessions. This led me to keep information needed for almost every user search and display inside the User schema while keeping the authentication and permission data for true accounts in a separate Auth schema. I'll note that, I was unhappy with how permissions are stored here and I think I would alter how it was structured if I had a do-over.
+My User and Auth schemas from Pivotal Retention as database examples. Many "Users" were drivers that didn't need an actual account login or permissions. They received an email with a unique URL for responding to feedback requests, but never logged in or had multi-page sessions. This led me to keep information needed for almost every user search and display inside the User schema while keeping the authentication and permission data for true accounts in a separate Auth schema. I'll note that, I was unhappy with how permissions are stored here and I think I would alter how it was structured if I had a do-over.
 
 Front-end
 
